@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Adam Zloch, 10.05.2025 -->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie w HTML i CSS</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 20px;
+        }
+        h1 {
+            font-weight: bold;
+            color: #0056b3;
+        }
+        ol {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        ol li {
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        .content {
+            font-weight: normal;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Opis stylu lokalnego, liniowego, linijkowego</u></h1>
+    <ol>
+        <li><h2>Na co pozwala styl lokalny, który element będzie formatowany z jego pomocą?</h2>
+            <p class="content">Styl lokalny umożliwia zastosowanie formatowania do pojedynczego elementu na stronie, a jego użycie zależy od wybranego selektora.</p>
+        </li>
+        <li><h2>Jak wygląda składnia teoretyczna stylu lokalnego?</h2>
+            <p class="content">Składnia stylu lokalnego może obejmować np. tabelę o jednej komórce, w której używamy znaków specjalnych, by wyświetlić definicję stylu bez jego zastosowania. Przykładem takiego "znaku specjalnego" jest <code>&amp;nbsp;</code>, który reprezentuje spację niełamana.</p>
+        </li>
+        <li><h2>Co to jest selektor?</h2>
+            <p class="content">Selektor w CSS to element HTML, który jest wybierany do zastosowania określonych stylów, np. <code>p</code> (akapit), <code>h1</code> (nagłówek), <code>td</code> (komórka tabeli) i inne.</p>
+        </li>
+        <li><h2>Co wpisujemy jako "cechę" i jakie jest znaczenie średników?</h2>
+            <p class="content">Cechą w CSS jest konkretny atrybut, który chcemy sformatować, np. kolor tekstu (color). Średnik służy do oddzielania różnych cech selektora.</p>
+        </li>
+        <li><h2>Co wpisujemy jako "wartość" w deklaracji stylu?</h2>
+            <p class="content">Wartość to dokładny parametr przypisany do cechy, np. dla koloru tekstu może to być "red", "blue" lub wartość szesnastkowa jak "#31F4A5". Wartość zależy od cechy, której dotyczy.</p>
+        </li>
+    </ol>
+</body>
+</html>
+

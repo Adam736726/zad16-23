@@ -1,0 +1,39 @@
+p#pogrubienie_zloch {
+    font-size: 33px;
+    color: #8C60CC;
+    font-weight: bold;
+}
+
+p#pochylona_zloch {
+    font-size: 38pt;
+    color: #F0C468;
+    font-style: italic;
+}
+
+p#index_gorny_zloch {
+    font-size: 1,3cm;
+    color: #A09218;
+    vertical-align: super;
+}
+
+p#index_dolny_zloch {
+    font-size: 2.1cm;
+    color: rgb(24%,96%,8%);
+    vertical-align: sub;
+}
+
+p#mono_zloch {
+    font-size: 44px;
+    color: #20E268;
+    font-family: monospace;
+}
+
+p#powiekszenie_zloch {
+    font-size: larger;
+    color: #5A429A;
+}
+
+p#pomniejszenie_zloch {
+    font-size: smaller;
+    color: rgb(75%, 65%, 21%);
+}

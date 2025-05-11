@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Adam Zloch, 10.05.2025 -->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zewnętrzne arkusze stylów w CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        textarea {
+            background-color: #f4f4f4;
+            border: 1px solid #999;
+            width: 100%;
+            padding: 10px;
+            font-family: monospace;
+            resize: none;
+        }
+        table {
+            width: 100%;
+            border: 2px solid #333;
+            border-collapse: collapse;
+            background-color: #fff;
+        }
+        td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            font-family: monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Zewnętrzne arkusze stylów w CSS</h1>
+
+    <h2>1. Podstawowa składnia CSS</h2>
+    <table>
+        <tr>
+            <td>
+                <strong>Przykład kodu CSS:</strong>
+                <pre>
+body {
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+}
+p {
+    color: blue; 
+    font-size: 16px; 
+}
+h1 {
+    color: green; 
+    text-align: center;
+}
+                </pre>
+            </td>
+        </tr>
+    </table>
+
+    <h2>2. Jak podłączyć arkusz CSS do HTML?</h2>
+    <p>Arkusz stylów jest dołączany w sekcji <code>&lt;head&gt;</code> za pomocą znacznika <code>&lt;link&gt;</code>. Można dodać kilka plików CSS.</p>
+
+    <h2>3. Podstawowa składnia podłączenia pliku CSS</h2>
+    <textarea readonly>
+<link rel="stylesheet" type="text/css" href="style.css">
+    </textarea>
+
+    <h2>4. Ile arkuszy CSS można dołączyć do jednej strony?</h2>
+    <p>Nie ma ograniczeń co do liczby dołączonych arkuszy CSS, ale każdy plik powinien być umieszczony w oddzielnym znaczniku <code>&lt;link&gt;</code>.</p>
+
+    <h2>5. Co się dzieje w przypadku konfliktów stylów?</h2>
+    <p>Jeżeli ten sam styl zostanie zdefiniowany w różnych plikach, obowiązuje zasada kaskadowości – ostatni wczytany plik ma pierwszeństwo.</p>
+
+    <h2>6. Tworzenie arkusza stylów w edytorach</h2>
+    <ul>
+        <li><strong>Edytor tekstowy:</strong> Możemy napisać kod CSS w notatniku i zapisać go jako plik <code>.css</code>.</li>
+        <li><strong>Edytor wizualny:</strong> Narzędzia jak Visual Studio Code czy Sublime Text oferują funkcje podglądu i ułatwień.</li>
+    </ul>
+
+    <h2>7. Jakie rozszerzenie ma plik CSS?</h2>
+    <p>Każdy plik zawierający styl CSS zapisujemy z rozszerzeniem <code>.css</code>.</p>
+
+    <h2>8. Zalety stosowania zewnętrznych arkuszy stylów</h2>
+    <ol>
+        <li>Możliwość stosowania tych samych stylów na wielu stronach.</li>
+        <li>Łatwe zarządzanie wyglądem – zmiany dokonane w jednym miejscu wpływają na cały serwis.</li>
+    </ol>
+
+    <h2>9. Dobre praktyki w CSS</h2>
+    <ul>
+        <li>Pliki <code>.css</code> należy podłączać w sekcji <code>&lt;head&gt;</code>.</li>
+        <li>Zaleca się stosowanie kilku arkuszy dla różnych sekcji strony, aby zachować porządek.</li>
+        <li>Konflikty stylów rozwiązuje kaskadowość – ostatni zapisany styl ma najwyższy priorytet.</li>
+    </ul>
+
+</body>
+</html>

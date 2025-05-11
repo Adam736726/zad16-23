@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Adam Zloch, 10.05.2025 -->
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatowanie w HTML i CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            font-family: monospace;
+            background: #f4f4f4;
+            border: 1px solid #999;
+            padding: 5px;
+            resize: none;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wewnętrzne style CSS</h1>
+
+    <ol>
+        <li>
+            <h2>Gdzie umieszczamy style wewnętrzne?</h2>
+            <p>Blok stylów znajduje się w sekcji <code>&lt;head&gt;</code> dokumentu HTML.</p>
+        </li>
+
+        <li>
+            <h2>Jak wygląda składnia wewnętrznych stylów?</h2>
+            <textarea readonly>
+<head>
+    <style>
+        selektor {
+            właściwość: wartość;
+            inna-właściwość: inna-wartość;
+        }
+    </style>
+</head>
+            </textarea>
+        </li>
+
+        <li>
+            <h2>Rodzaje selektorów w CSS</h2>
+            <p>CSS pozwala na wybór elementów za pomocą:</p>
+            <ul>
+                <li>nazw tagów (np. <code>p</code>, <code>div</code>)</li>
+                <li>identyfikatorów (<code>#unikalne-id</code>)</li>
+                <li>klas (<code>.nazwa-klasy</code>)</li>
+                <li>pseudo-klas (<code>:hover</code>, <code>:focus</code>)</li>
+                <li>atrybutów (<code>[type="text"]</code>)</li>
+            </ul>
+        </li>
+
+        <li>
+            <h2>Właściwości CSS</h2>
+            <p>Możemy modyfikować m.in.:</p>
+            <ul>
+                <li>wygląd tekstu (czcionka, kolor, rozmiar)</li>
+                <li>marginesy i odstępy</li>
+                <li>obramowania i tła</li>
+                <li>układ elementów</li>
+            </ul>
+        </li>
+    </ol>
+
+</body>
+</html>

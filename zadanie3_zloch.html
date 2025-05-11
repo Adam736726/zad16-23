@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylizacja w HTML i CSS</title>
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #eef2f3;
+            margin: 0;
+            padding: 20px;
+            color: #222;
+        }
+
+        header {
+            background-color: #4A90E2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #444;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4A90E2;
+            color: white;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Stylizacja w HTML i CSS
+    </header>
+
+    <section>
+        <h2>Porównanie HTML i CSS pod względem formatowania</h2>
+        <table>
+            <tr>
+                <th>Aspekt</th>
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+            <tr>
+                <td>Zakres modyfikacji</td>
+                <td>Podstawowe zmiany wyglądu</td>
+                <td>Zaawansowane opcje stylizacji</td>
+            </tr>
+            <tr>
+                <td>Łatwość edycji</td>
+                <td>Wymaga powielania kodu</td>
+                <td>Centralne zarządzanie stylami</td>
+            </tr>
+            <tr>
+                <td>Struktura kodu</td>
+                <td>Styl mieszany z treścią</td>
+                <td>Separacja treści i wyglądu</td>
+            </tr>
+            <tr>
+                <td>Efekty wizualne</td>
+                <td>Ograniczone możliwości</td>
+                <td>Animacje, gradienty, cienie</td>
+            </tr>
+        </table>
+
+        <h2>Co daje CSS?</h2>
+        <ol>
+            <li>Lepsza kontrola nad wyglądem.</li>
+            <li>Nowoczesne układy dzięki Flexbox i Grid.</li>
+            <li>Interaktywność przez pseudo-klasy.</li>
+            <li>Responsywność i dostosowanie do różnych ekranów.</li>
+        </ol>
+
+        <h2>Ograniczenia CSS</h2>
+        <ul>
+            <li>Różne interpretacje przez przeglądarki.</li>
+            <li>Możliwość nadpisywania stylów, co bywa problematyczne.</li>
+            <li>Niektóre starsze przeglądarki nie obsługują nowoczesnych funkcji.</li>
+        </ul>
+    </section>
+
+</body>
+</html>
